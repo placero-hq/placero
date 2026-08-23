@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const WHATSAPP_CHANNEL_URL = "https://whatsapp.com/channel/0029VbDd5Dn1t90hUkNOA031";
-const SHOW_AFTER_MS = 35000; // 35s, within the requested 30-40s window
+const SHOW_AFTER_MS = 15000; // 15s, within the requested 15-20s window
 const DISMISS_KEY = "wa_popup_dismissed_at";
-const DISMISS_COOLDOWN_MS = 1000 * 60 * 60 * 24 * 3; // don't re-nag for 3 days after a dismiss
+const DISMISS_COOLDOWN_MS = 1000 * 60 * 60 * 12; // don't re-nag for 12 hours after a dismiss
 
 export default function WhatsAppPopup() {
   const [visible, setVisible] = useState(false);
