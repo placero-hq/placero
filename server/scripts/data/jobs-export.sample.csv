@@ -1,0 +1,6 @@
+company,title,location,work_mode,experience,salary,job_type,category,skills,description,responsibilities,requirements,eligibility,benefits,application_url,source_url,posted_at,deadline,status,featured
+Wysa,Junior Backend Developer,Bengaluru,Hybrid,0-2 years,6-9 LPA,Full-time,jobs,"Node.js, PostgreSQL, REST APIs",Build and maintain backend services for Wysa's mental health platform.,"Design APIs
+Write tests
+Ship features","1-2 years experience
+Familiar with Node.js","B.Tech/BE in CS or related","Health insurance
+Remote-friendly",https://example.com/apply/wysa-backend,https://wysa.com/careers,2026-08-01,2026-09-30,draft,false
