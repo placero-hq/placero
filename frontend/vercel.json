@@ -1,13 +1,23 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ],
-    "headers": [
-      {
-        "source": "/assets/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-        ]
-      }
-    ]
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "rewrites": [
+        {
+          "source": "/api/(.*)",
+          "destination": "https://placero-backend.onrender.com/api/$1"
+        },
+        { "source": "/(.*)", "destination": "/index.html" }
+      ]
+    }
+  ]
+}
