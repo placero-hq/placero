@@ -18,9 +18,9 @@ function requireAdmin(req, res, next) {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
     req.admin = { id: payload.sub, username: payload.username };
     return next();
-  } catch {
+  } catch (err) {
     console.error("JWT verify failed:", err.message);
-  return res.status(401).json({ message: "Session expired or invalid" });
+    return res.status(401).json({ message: "Session expired or invalid" });
   }
 }
 
