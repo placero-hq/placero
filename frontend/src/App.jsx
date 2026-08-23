@@ -10,6 +10,7 @@ import Internships from "./pages/Internships";
 import Freshers from "./pages/Freshers";
 import JobDetail from "./pages/JobDetail";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 import NotFound from "./pages/NotFound";
 
@@ -76,6 +77,7 @@ export default function App() {
                 <Route path="/freshers" element={<Freshers />} />
                 <Route path="/jobs/:slug" element={<JobDetail />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Legal title="Privacy Policy" />} />
                 <Route path="/terms" element={<Legal title="Terms of Service" />} />
                 <Route path="*" element={<NotFound />} />
