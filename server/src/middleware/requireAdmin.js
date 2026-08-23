@@ -19,7 +19,8 @@ function requireAdmin(req, res, next) {
     req.admin = { id: payload.sub, username: payload.username };
     return next();
   } catch {
-    return res.status(401).json({ message: "Session expired or invalid" });
+    console.error("JWT verify failed:", err.message);
+  return res.status(401).json({ message: "Session expired or invalid" });
   }
 }
 
