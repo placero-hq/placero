@@ -79,8 +79,6 @@ export default function JobDetail() {
         </p>
       )}
 
-      <div className="mt-5"><ApplyButton job={job} /></div>
-
       <div className="mt-6"><JobMeta job={job} /></div>
 
       <Section title="Job Description" content={job.description} />
