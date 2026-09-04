@@ -4,6 +4,8 @@ import { useJobs } from "../context/JobsContext";
 import JobMeta from "../components/jobs/JobMeta";
 import ApplyButton from "../components/jobs/ApplyButton";
 import RelatedJobs from "../components/jobs/RelatedJobs";
+import NativeBannerAd from "../components/ads/NativeBannerAd";
+import BannerAd from "../components/ads/BannerAd";
 import { setPageMeta, setJobPostingJsonLd, isJobExpired } from "../lib/seo";
 import { SITE_URL } from "../config/env";
 import NotFound from "./NotFound";
@@ -81,6 +83,8 @@ export default function JobDetail() {
 
       <div className="mt-6"><JobMeta job={job} /></div>
 
+      <NativeBannerAd />
+
       <Section title="Job Description" content={job.description} />
       <ListSection title="Responsibilities" items={job.responsibilities} />
       <ListSection title="Requirements" items={job.requirements} />
@@ -88,6 +92,8 @@ export default function JobDetail() {
       <ListSection title="Benefits" items={job.benefits} />
 
       <div className="mt-8"><ApplyButton job={job} /></div>
+
+      <BannerAd />
 
       <RelatedJobs currentJob={job} />
     </div>
