@@ -4,8 +4,6 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import WhatsAppPopup from "./components/layout/WhatsAppPopup";
-import PopunderAd from "./components/ads/PopunderAd";
-import SocialBarAd from "./components/ads/SocialBarAd";
 import Home from "./pages/Home";
 import Jobs from "./pages/Jobs";
 import Internships from "./pages/Internships";
@@ -87,8 +85,6 @@ export default function App() {
             </main>
             <Footer />
             <WhatsAppPopup />
-            <PopunderAd />
-            <SocialBarAd />
           </div>
         }
       />
