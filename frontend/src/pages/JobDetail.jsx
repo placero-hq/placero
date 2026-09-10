@@ -7,6 +7,7 @@ import RelatedJobs from "../components/jobs/RelatedJobs";
 import { setPageMeta, setJobPostingJsonLd, isJobExpired } from "../lib/seo";
 import { SITE_URL } from "../config/env";
 import NotFound from "./NotFound";
+import JobPagePromo from "../components/promo/JobPagePromo";
 
 function Section({ title, content }) {
   if (!content) return null;
@@ -86,7 +87,7 @@ export default function JobDetail() {
       <ListSection title="Requirements" items={job.requirements} />
       <ListSection title="Eligibility" items={job.eligibility} />
       <ListSection title="Benefits" items={job.benefits} />
-
+      <JobPagePromo />
       <div className="mt-8"><ApplyButton job={job} /></div>
 
       <RelatedJobs currentJob={job} />
