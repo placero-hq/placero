@@ -1,6 +1,6 @@
 // Shown once on every job page. To change the creative or link, edit the
 // two values below — nothing else needs to change.
-const GIF_SRC = "promo.png"; // put your file in frontend/public/promos/
+const GIF_SRC = "frontend/public/promo.png"; // put your file in frontend/public/promos/
 const LINK = "https://superprofile.bio/vp/ymrGF8SH";
 const ALT_TEXT = "Placero Interview Prep Kit";
 
